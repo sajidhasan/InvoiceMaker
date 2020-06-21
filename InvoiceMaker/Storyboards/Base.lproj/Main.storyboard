@@ -78,17 +78,18 @@
                                     <action selector="backButtonPressed:" destination="kAN-w3-nPz" eventType="touchUpInside" id="or6-yL-gHh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your business address:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewa-Wr-cKo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your business's address?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewa-Wr-cKo">
                                 <rect key="frame" x="50" y="100" width="300" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="X9p-Dt-Ogp"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="35"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8et-73-4hu">
                                 <rect key="frame" x="50" y="350" width="320" height="34"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -133,6 +134,90 @@
             </objects>
             <point key="canvasLocation" x="3021.739130434783" y="116.51785714285714"/>
         </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="BHR-gj-kwM">
+            <objects>
+                <viewController storyboardIdentifier="ContactViewController" id="mdD-3m-3DL" customClass="ContactViewController" customModule="InvoiceMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kTF-Lx-U7a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0z1-fm-X4k">
+                                <rect key="frame" x="20" y="64" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2UU-ME-t65"/>
+                                    <constraint firstAttribute="width" constant="30" id="ys7-ee-5Gi"/>
+                                </constraints>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="mdD-3m-3DL" eventType="touchUpInside" id="UU2-rI-oSu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your business's email &amp; phone number?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zc4-z4-JdU">
+                                <rect key="frame" x="50" y="108" width="300" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="5U5-KE-JJb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AXm-Kc-Zwf">
+                                <rect key="frame" x="50" y="358" width="320" height="34"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jfc-K5-0qq">
+                                <rect key="frame" x="50" y="442" width="320" height="34"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="tel"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5A-1W-lg0">
+                                <rect key="frame" x="57" y="752" width="300" height="60"/>
+                                <color key="backgroundColor" red="0.086754046380000005" green="0.2077649832" blue="0.22745418549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="RQa-VH-j9Z"/>
+                                    <constraint firstAttribute="height" constant="60" id="gPW-vB-97X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="35"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="mdD-3m-3DL" eventType="touchUpInside" id="aVa-xg-qAY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zc4-z4-JdU" firstAttribute="top" secondItem="voI-ZJ-Mf3" secondAttribute="top" constant="64" id="0Xl-07-GeF"/>
+                            <constraint firstItem="AXm-Kc-Zwf" firstAttribute="top" secondItem="zc4-z4-JdU" secondAttribute="bottom" constant="50" id="27U-es-Jcu"/>
+                            <constraint firstItem="voI-ZJ-Mf3" firstAttribute="trailing" secondItem="AXm-Kc-Zwf" secondAttribute="trailing" constant="44" id="6hL-hR-QFs"/>
+                            <constraint firstItem="voI-ZJ-Mf3" firstAttribute="trailing" secondItem="zc4-z4-JdU" secondAttribute="trailing" constant="64" id="JSy-81-RZ0"/>
+                            <constraint firstItem="0z1-fm-X4k" firstAttribute="top" secondItem="voI-ZJ-Mf3" secondAttribute="top" constant="20" id="Jb1-4H-lkd"/>
+                            <constraint firstItem="D5A-1W-lg0" firstAttribute="centerX" secondItem="kTF-Lx-U7a" secondAttribute="centerX" id="KHV-wG-XUY"/>
+                            <constraint firstItem="AXm-Kc-Zwf" firstAttribute="leading" secondItem="voI-ZJ-Mf3" secondAttribute="leading" constant="50" id="MCS-Ml-gpj"/>
+                            <constraint firstItem="voI-ZJ-Mf3" firstAttribute="trailing" secondItem="jfc-K5-0qq" secondAttribute="trailing" constant="44" id="TQz-1G-vbb"/>
+                            <constraint firstItem="jfc-K5-0qq" firstAttribute="leading" secondItem="voI-ZJ-Mf3" secondAttribute="leading" constant="50" id="eb6-Ph-DfF"/>
+                            <constraint firstItem="zc4-z4-JdU" firstAttribute="leading" secondItem="voI-ZJ-Mf3" secondAttribute="leading" constant="50" id="ga5-OV-bmi"/>
+                            <constraint firstItem="0z1-fm-X4k" firstAttribute="leading" secondItem="voI-ZJ-Mf3" secondAttribute="leading" constant="20" id="nYq-Iu-Mh7"/>
+                            <constraint firstItem="voI-ZJ-Mf3" firstAttribute="bottom" secondItem="D5A-1W-lg0" secondAttribute="bottom" constant="50" id="wqn-5q-izl"/>
+                            <constraint firstItem="jfc-K5-0qq" firstAttribute="top" secondItem="AXm-Kc-Zwf" secondAttribute="bottom" constant="50" id="ySf-ku-hBv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="voI-ZJ-Mf3"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="AXm-Kc-Zwf" id="Y4w-9s-FSq"/>
+                        <outlet property="nextButton" destination="D5A-1W-lg0" id="QIE-pY-XWn"/>
+                        <outlet property="phoneTextField" destination="jfc-K5-0qq" id="rmc-pG-mNi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JNP-PH-9gp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4049" y="117"/>
+        </scene>
         <!--Name View Controller-->
         <scene sceneID="8wn-qg-fyn">
             <objects>
@@ -152,7 +237,7 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mb5-3v-JPU">
                                 <rect key="frame" x="50" y="350" width="320" height="26.5"/>
-                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="organization"/>
                             </textField>
@@ -228,7 +313,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back" width="13" height="22"/>
+        <image name="back" width="30" height="30"/>
         <image name="man" width="907" height="1280"/>
     </resources>
 </document>

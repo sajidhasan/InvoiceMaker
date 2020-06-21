@@ -26,14 +26,10 @@ class AddressViewController: UIViewController {
     
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {
-        
-        
-        
         business.businessAddress = addressTextField.text ?? "CWC - 189, Gulshan 1"
         
-        
-//        let vc = (storyboard?.instantiateViewController(withIdentifier: "NameViewController")) as! NameViewController
-//        navigationController?.pushViewController(vc, animated: true)
+        let vc = (storyboard?.instantiateViewController(withIdentifier: "ContactViewController")) as! ContactViewController
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     
