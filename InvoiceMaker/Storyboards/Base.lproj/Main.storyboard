@@ -218,6 +218,45 @@
             </objects>
             <point key="canvasLocation" x="4049" y="117"/>
         </scene>
+        <!--Preview View Controller-->
+        <scene sceneID="mN0-70-hRP">
+            <objects>
+                <viewController storyboardIdentifier="PreviewViewController" id="Lsc-72-GNo" customClass="PreviewViewController" customModule="InvoiceMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="egk-ud-5Sl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sln-oZ-1G2">
+                                <rect key="frame" x="57" y="782" width="300" height="60"/>
+                                <color key="backgroundColor" red="0.086754046380000005" green="0.2077649832" blue="0.22745418549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="ALD-Ph-H7e"/>
+                                    <constraint firstAttribute="height" constant="60" id="X1v-Fv-CwB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="35"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continuewButtonPressed:" destination="Lsc-72-GNo" eventType="touchUpInside" id="qZ7-B8-GPu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gAi-bM-pfM" firstAttribute="bottom" secondItem="sln-oZ-1G2" secondAttribute="bottom" constant="20" id="20o-2f-CUd"/>
+                            <constraint firstItem="sln-oZ-1G2" firstAttribute="centerX" secondItem="egk-ud-5Sl" secondAttribute="centerX" id="wqq-Cw-euo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gAi-bM-pfM"/>
+                    </view>
+                    <connections>
+                        <outlet property="continuewButton" destination="sln-oZ-1G2" id="5Q3-kW-3Yj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQp-Ko-s0H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5231.884057971015" y="851.78571428571422"/>
+        </scene>
         <!--Name View Controller-->
         <scene sceneID="8wn-qg-fyn">
             <objects>

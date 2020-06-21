@@ -32,6 +32,8 @@
 		02000772249FA60E003A5652 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02000771249FA60E003A5652 /* Business.swift */; };
 		02000774249FBC1F003A5652 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02000773249FBC1F003A5652 /* AddressViewController.swift */; };
 		0200077C249FCD56003A5652 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0200077B249FCD56003A5652 /* ContactViewController.swift */; };
+		0200077E249FE419003A5652 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0200077D249FE419003A5652 /* PreviewViewController.swift */; };
+		02000781249FE907003A5652 /* InvoiceMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02000780249FE906003A5652 /* InvoiceMaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		02000771249FA60E003A5652 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		02000773249FBC1F003A5652 /* AddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
 		0200077B249FCD56003A5652 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		0200077D249FE419003A5652 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		02000780249FE906003A5652 /* InvoiceMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceMaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				02000770249FA5E2003A5652 /* Model */,
+				0200077F249FE8D4003A5652 /* View */,
 				0200076D249FA3B9003A5652 /* Controller */,
 				0200076C249FA398003A5652 /* Storyboards */,
 				0200074C249F9C89003A5652 /* Fonts */,
@@ -144,6 +149,7 @@
 				0200076E249FA575003A5652 /* NameViewController.swift */,
 				02000773249FBC1F003A5652 /* AddressViewController.swift */,
 				0200077B249FCD56003A5652 /* ContactViewController.swift */,
+				0200077D249FE419003A5652 /* PreviewViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -154,6 +160,14 @@
 				02000771249FA60E003A5652 /* Business.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0200077F249FE8D4003A5652 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02000780249FE906003A5652 /* InvoiceMaker.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +260,11 @@
 				0200077C249FCD56003A5652 /* ContactViewController.swift in Sources */,
 				02000739249F9C54003A5652 /* AppDelegate.swift in Sources */,
 				0200073B249F9C54003A5652 /* SceneDelegate.swift in Sources */,
+				02000781249FE907003A5652 /* InvoiceMaker.swift in Sources */,
 				02000774249FBC1F003A5652 /* AddressViewController.swift in Sources */,
 				02000772249FA60E003A5652 /* Business.swift in Sources */,
 				0200076F249FA575003A5652 /* NameViewController.swift in Sources */,
+				0200077E249FE419003A5652 /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
