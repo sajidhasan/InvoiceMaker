@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02000739249F9C54003A5652 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02000738249F9C54003A5652 /* AppDelegate.swift */; };
+		0200073B249F9C54003A5652 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0200073A249F9C54003A5652 /* SceneDelegate.swift */; };
+		0200073D249F9C54003A5652 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0200073C249F9C54003A5652 /* ViewController.swift */; };
+		02000740249F9C54003A5652 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0200073E249F9C54003A5652 /* Main.storyboard */; };
+		02000742249F9C55003A5652 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02000741249F9C55003A5652 /* Assets.xcassets */; };
+		02000745249F9C55003A5652 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02000743249F9C55003A5652 /* LaunchScreen.storyboard */; };
+		0200075C249F9CC2003A5652 /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0200074D249F9CC2003A5652 /* Nunito-ExtraBold.ttf */; };
+		0200075D249F9CC2003A5652 /* Nunito-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0200074E249F9CC2003A5652 /* Nunito-ExtraLightItalic.ttf */; };
+		0200075E249F9CC2003A5652 /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0200074F249F9CC2003A5652 /* Nunito-Light.ttf */; };
+		0200075F249F9CC2003A5652 /* Nunito-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02000750249F9CC2003A5652 /* Nunito-SemiBoldItalic.ttf */; };
+		02000760249F9CC2003A5652 /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02000751249F9CC2003A5652 /* Nunito-ExtraLight.ttf */; };
+		02000761249F9CC2003A5652 /* Nunito-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02000752249F9CC2003A5652 /* Nunito-BoldItalic.ttf */; };
+		02000762249F9CC2003A5652 /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02000753249F9CC2003A5652 /* Nunito-Italic.ttf */; };
+		02000763249F9CC2003A5652 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02000754249F9CC2003A5652 /* Nunito-SemiBold.ttf */; };
+		02000764249F9CC2003A5652 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02000755249F9CC2003A5652 /* OFL.txt */; };
+		02000765249F9CC2003A5652 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02000756249F9CC2003A5652 /* Nunito-Regular.ttf */; };
+		02000766249F9CC2003A5652 /* Nunito-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02000757249F9CC2003A5652 /* Nunito-ExtraBoldItalic.ttf */; };
+		02000767249F9CC2003A5652 /* Nunito-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02000758249F9CC2003A5652 /* Nunito-LightItalic.ttf */; };
+		02000768249F9CC2003A5652 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02000759249F9CC2003A5652 /* Nunito-Bold.ttf */; };
+		02000769249F9CC2003A5652 /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0200075A249F9CC2003A5652 /* Nunito-Black.ttf */; };
+		0200076A249F9CC2003A5652 /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0200075B249F9CC2003A5652 /* Nunito-BlackItalic.ttf */; };
+		0200076F249FA575003A5652 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0200076E249FA575003A5652 /* NameViewController.swift */; };
+		02000772249FA60E003A5652 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02000771249FA60E003A5652 /* Business.swift */; };
+		02000774249FBC1F003A5652 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02000773249FBC1F003A5652 /* AddressViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02000735249F9C54003A5652 /* InvoiceMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvoiceMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02000738249F9C54003A5652 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0200073A249F9C54003A5652 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0200073C249F9C54003A5652 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0200073F249F9C54003A5652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02000741249F9C55003A5652 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02000744249F9C55003A5652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		02000746249F9C55003A5652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0200074D249F9CC2003A5652 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		0200074E249F9CC2003A5652 /* Nunito-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		0200074F249F9CC2003A5652 /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		02000750249F9CC2003A5652 /* Nunito-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		02000751249F9CC2003A5652 /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
+		02000752249F9CC2003A5652 /* Nunito-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BoldItalic.ttf"; sourceTree = "<group>"; };
+		02000753249F9CC2003A5652 /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
+		02000754249F9CC2003A5652 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		02000755249F9CC2003A5652 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		02000756249F9CC2003A5652 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		02000757249F9CC2003A5652 /* Nunito-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		02000758249F9CC2003A5652 /* Nunito-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-LightItalic.ttf"; sourceTree = "<group>"; };
+		02000759249F9CC2003A5652 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		0200075A249F9CC2003A5652 /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
+		0200075B249F9CC2003A5652 /* Nunito-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BlackItalic.ttf"; sourceTree = "<group>"; };
+		0200076E249FA575003A5652 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
+		02000771249FA60E003A5652 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		02000773249FBC1F003A5652 /* AddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02000732249F9C53003A5652 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0200072C249F9C53003A5652 = {
+			isa = PBXGroup;
+			children = (
+				02000737249F9C54003A5652 /* InvoiceMaker */,
+				02000736249F9C54003A5652 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02000736249F9C54003A5652 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02000735249F9C54003A5652 /* InvoiceMaker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02000737249F9C54003A5652 /* InvoiceMaker */ = {
+			isa = PBXGroup;
+			children = (
+				02000770249FA5E2003A5652 /* Model */,
+				0200076D249FA3B9003A5652 /* Controller */,
+				0200076C249FA398003A5652 /* Storyboards */,
+				0200074C249F9C89003A5652 /* Fonts */,
+				02000738249F9C54003A5652 /* AppDelegate.swift */,
+				0200073A249F9C54003A5652 /* SceneDelegate.swift */,
+				02000741249F9C55003A5652 /* Assets.xcassets */,
+				02000746249F9C55003A5652 /* Info.plist */,
+			);
+			path = InvoiceMaker;
+			sourceTree = "<group>";
+		};
+		0200074C249F9C89003A5652 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0200075A249F9CC2003A5652 /* Nunito-Black.ttf */,
+				0200075B249F9CC2003A5652 /* Nunito-BlackItalic.ttf */,
+				02000759249F9CC2003A5652 /* Nunito-Bold.ttf */,
+				02000752249F9CC2003A5652 /* Nunito-BoldItalic.ttf */,
+				0200074D249F9CC2003A5652 /* Nunito-ExtraBold.ttf */,
+				02000757249F9CC2003A5652 /* Nunito-ExtraBoldItalic.ttf */,
+				02000751249F9CC2003A5652 /* Nunito-ExtraLight.ttf */,
+				0200074E249F9CC2003A5652 /* Nunito-ExtraLightItalic.ttf */,
+				02000753249F9CC2003A5652 /* Nunito-Italic.ttf */,
+				0200074F249F9CC2003A5652 /* Nunito-Light.ttf */,
+				02000758249F9CC2003A5652 /* Nunito-LightItalic.ttf */,
+				02000756249F9CC2003A5652 /* Nunito-Regular.ttf */,
+				02000754249F9CC2003A5652 /* Nunito-SemiBold.ttf */,
+				02000750249F9CC2003A5652 /* Nunito-SemiBoldItalic.ttf */,
+				02000755249F9CC2003A5652 /* OFL.txt */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0200076C249FA398003A5652 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0200073E249F9C54003A5652 /* Main.storyboard */,
+				02000743249F9C55003A5652 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0200076D249FA3B9003A5652 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0200073C249F9C54003A5652 /* ViewController.swift */,
+				0200076E249FA575003A5652 /* NameViewController.swift */,
+				02000773249FBC1F003A5652 /* AddressViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		02000770249FA5E2003A5652 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02000771249FA60E003A5652 /* Business.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02000734249F9C53003A5652 /* InvoiceMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02000749249F9C55003A5652 /* Build configuration list for PBXNativeTarget "InvoiceMaker" */;
+			buildPhases = (
+				02000731249F9C53003A5652 /* Sources */,
+				02000732249F9C53003A5652 /* Frameworks */,
+				02000733249F9C53003A5652 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InvoiceMaker;
+			productName = InvoiceMaker;
+			productReference = 02000735249F9C54003A5652 /* InvoiceMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0200072D249F9C53003A5652 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Sajidd;
+				TargetAttributes = {
+					02000734249F9C53003A5652 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 02000730249F9C53003A5652 /* Build configuration list for PBXProject "InvoiceMaker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0200072C249F9C53003A5652;
+			productRefGroup = 02000736249F9C54003A5652 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02000734249F9C53003A5652 /* InvoiceMaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02000733249F9C53003A5652 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02000745249F9C55003A5652 /* LaunchScreen.storyboard in Resources */,
+				0200076A249F9CC2003A5652 /* Nunito-BlackItalic.ttf in Resources */,
+				02000762249F9CC2003A5652 /* Nunito-Italic.ttf in Resources */,
+				0200075F249F9CC2003A5652 /* Nunito-SemiBoldItalic.ttf in Resources */,
+				0200075D249F9CC2003A5652 /* Nunito-ExtraLightItalic.ttf in Resources */,
+				02000761249F9CC2003A5652 /* Nunito-BoldItalic.ttf in Resources */,
+				02000766249F9CC2003A5652 /* Nunito-ExtraBoldItalic.ttf in Resources */,
+				02000768249F9CC2003A5652 /* Nunito-Bold.ttf in Resources */,
+				02000763249F9CC2003A5652 /* Nunito-SemiBold.ttf in Resources */,
+				02000769249F9CC2003A5652 /* Nunito-Black.ttf in Resources */,
+				02000764249F9CC2003A5652 /* OFL.txt in Resources */,
+				0200075E249F9CC2003A5652 /* Nunito-Light.ttf in Resources */,
+				02000742249F9C55003A5652 /* Assets.xcassets in Resources */,
+				02000740249F9C54003A5652 /* Main.storyboard in Resources */,
+				02000765249F9CC2003A5652 /* Nunito-Regular.ttf in Resources */,
+				0200075C249F9CC2003A5652 /* Nunito-ExtraBold.ttf in Resources */,
+				02000767249F9CC2003A5652 /* Nunito-LightItalic.ttf in Resources */,
+				02000760249F9CC2003A5652 /* Nunito-ExtraLight.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02000731249F9C53003A5652 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0200073D249F9C54003A5652 /* ViewController.swift in Sources */,
+				02000739249F9C54003A5652 /* AppDelegate.swift in Sources */,
+				0200073B249F9C54003A5652 /* SceneDelegate.swift in Sources */,
+				02000774249FBC1F003A5652 /* AddressViewController.swift in Sources */,
+				02000772249FA60E003A5652 /* Business.swift in Sources */,
+				0200076F249FA575003A5652 /* NameViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0200073E249F9C54003A5652 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0200073F249F9C54003A5652 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		02000743249F9C55003A5652 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02000744249F9C55003A5652 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02000747249F9C55003A5652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02000748249F9C55003A5652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0200074A249F9C55003A5652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9288493BW2;
+				INFOPLIST_FILE = InvoiceMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sajidd.www.InvoiceMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0200074B249F9C55003A5652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9288493BW2;
+				INFOPLIST_FILE = InvoiceMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sajidd.www.InvoiceMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02000730249F9C53003A5652 /* Build configuration list for PBXProject "InvoiceMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02000747249F9C55003A5652 /* Debug */,
+				02000748249F9C55003A5652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02000749249F9C55003A5652 /* Build configuration list for PBXNativeTarget "InvoiceMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0200074A249F9C55003A5652 /* Debug */,
+				0200074B249F9C55003A5652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0200072D249F9C53003A5652 /* Project object */;
+}
