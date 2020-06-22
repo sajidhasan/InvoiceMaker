@@ -30,6 +30,8 @@ class ContactViewController: UIViewController {
     @IBAction func backButtonPressed(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
+    
+    
     @IBAction func nextButtonPressed(_ sender: UIButton) {
         let contact = "Email: \(emailTextField.text!), Phone: \(phoneTextField.text!)"
         business.businessContact = contact

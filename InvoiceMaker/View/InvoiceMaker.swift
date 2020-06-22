@@ -33,7 +33,7 @@ class InvoiceMaker: NSObject {
             context.beginPage()
             let titleBottom = addTitle(pageRect: pageRect)
             let addressBottom = addAddress(pageRect: pageRect, addressTop: titleBottom)
-            let contactbottom = addContact(pageRect: pageRect, contactTop: addressBottom)
+            let contactBottom = addContact(pageRect: pageRect, contactTop: addressBottom)
             //let imageBottom = addImage(pageRect: pageRect, imageTop: titleBottom + 18.0)
             //addBodyText(pageRect: pageRect, textTop: imageBottom + 18.0)
         }
@@ -42,16 +42,17 @@ class InvoiceMaker: NSObject {
     }
     
     private func addTitle(pageRect: CGRect) -> CGFloat {
-      
-      let titleFont = UIFont.init(name: "Nunito", size: 18)
-      let titleAttributes: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: titleFont!]
-      let attributedTitle = NSAttributedString(string: businessName, attributes: titleAttributes)
-      let titleStringSize = attributedTitle.size()
-      let titleStringRect = CGRect(x: (pageRect.width - titleStringSize.width) / 2.0, y: 36, width: titleStringSize.width, height: titleStringSize.height)
-      
-      attributedTitle.draw(in: titleStringRect)
-      
-      return titleStringRect.origin.y + titleStringRect.size.height
+        
+        let titleFont = UIFont.init(name: "Nunito", size: 18)
+        let greenColor = UIColor(red: 10/255, green: 190/255, blue: 50/255, alpha: 1)
+        let titleAttributes: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: titleFont!, NSAttributedString.Key.foregroundColor : greenColor]
+        let attributedTitle = NSAttributedString(string: businessName, attributes: titleAttributes)
+        let titleStringSize = attributedTitle.size()
+        let titleStringRect = CGRect(x: (pageRect.width - titleStringSize.width) / 2.0, y: 36, width: titleStringSize.width, height: titleStringSize.height)
+        
+        attributedTitle.draw(in: titleStringRect)
+        
+        return titleStringRect.origin.y + titleStringRect.size.height
     }
     
     private func addAddress(pageRect: CGRect, addressTop: CGFloat) -> CGFloat{
@@ -78,6 +79,8 @@ class InvoiceMaker: NSObject {
         
         return contactStringRect.origin.y + contactStringRect.size.height
     }
+    
+    
     
     
 }

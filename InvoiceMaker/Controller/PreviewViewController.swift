@@ -24,6 +24,9 @@ class PreviewViewController: UIViewController {
         
     }
     
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
     @IBAction func continuewButtonPressed(_ sender: Any) {
     }
     func loadPDF(){

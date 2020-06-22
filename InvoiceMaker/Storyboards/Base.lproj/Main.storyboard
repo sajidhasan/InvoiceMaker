@@ -20,12 +20,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man" translatesAutoresizingMaskIntoConstraints="NO" id="gQq-UL-Tj9">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="invoice" translatesAutoresizingMaskIntoConstraints="NO" id="gQq-UL-Tj9">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTz-Dh-t14">
                                 <rect key="frame" x="57" y="762" width="300" height="60"/>
-                                <color key="backgroundColor" red="0.086754046380000005" green="0.2077649832" blue="0.22745418549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.22548073530000001" green="0.28517559170000001" blue="0.67062312359999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="6gx-c5-mep"/>
                                     <constraint firstAttribute="height" constant="60" id="wRy-0S-SQd"/>
@@ -230,7 +230,7 @@
                                 <rect key="frame" x="57" y="782" width="300" height="60"/>
                                 <color key="backgroundColor" red="0.086754046380000005" green="0.2077649832" blue="0.22745418549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="ALD-Ph-H7e"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="ALD-Ph-H7e"/>
                                     <constraint firstAttribute="height" constant="60" id="X1v-Fv-CwB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="35"/>
@@ -241,10 +241,23 @@
                                     <action selector="continuewButtonPressed:" destination="Lsc-72-GNo" eventType="touchUpInside" id="qZ7-B8-GPu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsR-4L-fzW">
+                                <rect key="frame" x="20" y="64" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DGy-at-r3u"/>
+                                    <constraint firstAttribute="width" constant="30" id="l2o-zQ-fXP"/>
+                                </constraints>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="Lsc-72-GNo" eventType="touchUpInside" id="3Q9-sy-L41"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="gAi-bM-pfM" firstAttribute="bottom" secondItem="sln-oZ-1G2" secondAttribute="bottom" constant="20" id="20o-2f-CUd"/>
+                            <constraint firstItem="DsR-4L-fzW" firstAttribute="leading" secondItem="gAi-bM-pfM" secondAttribute="leading" constant="20" id="8zI-SM-rVd"/>
+                            <constraint firstItem="DsR-4L-fzW" firstAttribute="top" secondItem="gAi-bM-pfM" secondAttribute="top" constant="20" id="R6v-oY-7FN"/>
                             <constraint firstItem="sln-oZ-1G2" firstAttribute="centerX" secondItem="egk-ud-5Sl" secondAttribute="centerX" id="wqq-Cw-euo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gAi-bM-pfM"/>
@@ -282,7 +295,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKM-Nb-zDu">
                                 <rect key="frame" x="57" y="762" width="300" height="60"/>
-                                <color key="backgroundColor" red="0.086754046380000005" green="0.2077649832" blue="0.22745418549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.22548073530000001" green="0.28517559170000001" blue="0.67062312359999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="9Le-Hm-wFl"/>
                                     <constraint firstAttribute="height" constant="60" id="MKN-ER-ye7"/>
@@ -353,6 +366,6 @@
     </scenes>
     <resources>
         <image name="back" width="30" height="30"/>
-        <image name="man" width="907" height="1280"/>
+        <image name="invoice" width="5120" height="5120"/>
     </resources>
 </document>
