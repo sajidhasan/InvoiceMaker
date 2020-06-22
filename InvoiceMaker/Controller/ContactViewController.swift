@@ -31,8 +31,9 @@ class ContactViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     @IBAction func nextButtonPressed(_ sender: UIButton) {
-        
-        var invoiceMaker = InvoiceMaker()
+        let contact = "Email: \(emailTextField.text!), Phone: \(phoneTextField.text!)"
+        business.businessContact = contact
+        let invoiceMaker = InvoiceMaker()
         let vc = (storyboard?.instantiateViewController(withIdentifier: "PreviewViewController")) as! PreviewViewController
         vc.documentData = invoiceMaker.createInvoice()
         navigationController?.pushViewController(vc, animated: true)

@@ -9,7 +9,7 @@
 import UIKit
 
 
-var business = Business(name: "Business name", address: "CWC 189, Gulshan", city: "Dhaka", country: "Bangladesh")
+var business = Business(name: "Business name", address: "CWC 189, Gulshan", contact: "email & phone number", city: "Dhaka", country: "Bangladesh")
 
 class NameViewController: UIViewController {
 
