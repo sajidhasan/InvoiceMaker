@@ -34,6 +34,7 @@
 		0200077C249FCD56003A5652 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0200077B249FCD56003A5652 /* ContactViewController.swift */; };
 		0200077E249FE419003A5652 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0200077D249FE419003A5652 /* PreviewViewController.swift */; };
 		02000781249FE907003A5652 /* InvoiceMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02000780249FE906003A5652 /* InvoiceMaker.swift */; };
+		02A1650924A6AC52004CFA08 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A1650824A6AC52004CFA08 /* Customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		0200077B249FCD56003A5652 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		0200077D249FE419003A5652 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		02000780249FE906003A5652 /* InvoiceMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceMaker.swift; sourceTree = "<group>"; };
+		02A1650824A6AC52004CFA08 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				02000771249FA60E003A5652 /* Business.swift */,
+				02A1650824A6AC52004CFA08 /* Customer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0200073D249F9C54003A5652 /* ViewController.swift in Sources */,
+				02A1650924A6AC52004CFA08 /* Customer.swift in Sources */,
 				0200077C249FCD56003A5652 /* ContactViewController.swift in Sources */,
 				02000739249F9C54003A5652 /* AppDelegate.swift in Sources */,
 				0200073B249F9C54003A5652 /* SceneDelegate.swift in Sources */,

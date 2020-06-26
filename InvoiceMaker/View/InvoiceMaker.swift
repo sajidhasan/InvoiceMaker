@@ -40,7 +40,8 @@ class InvoiceMaker: NSObject {
             let dateBottom = addDate(pageRect: pageRect, dateTop: contactBottom, fontName: "Nunito", fontSize: 12)
             
             let context = context.cgContext
-            drawLine(context, pageRect: pageRect, lineY: dateBottom)
+            let lineBottom = drawLine(context, pageRect: pageRect, lineY: dateBottom)
+            let customerNameBottom = addCustomerDetails(pageRect: pageRect, customerTop: lineBottom)
             //let imageBottom = addImage(pageRect: pageRect, imageTop: titleBottom + 18.0)
             //addBodyText(pageRect: pageRect, textTop: imageBottom + 18.0)
         }
@@ -114,7 +115,7 @@ class InvoiceMaker: NSObject {
         return datetime
     }
     
-    private func drawLine(_ drawContext: CGContext, pageRect: CGRect, lineY: CGFloat){
+    private func drawLine(_ drawContext: CGContext, pageRect: CGRect, lineY: CGFloat) -> CGFloat{
         drawContext.saveGState()
         drawContext.setLineWidth(1.0)
         drawContext.move(to: CGPoint(x: 0, y: lineY))
@@ -124,10 +125,22 @@ class InvoiceMaker: NSObject {
         
         drawContext.saveGState()
         
+        let lineBottom = lineY + 2
+        
+        return lineBottom
+        
     }
     
-    private func addCustomerDetails(){
+    private func addCustomerDetails(pageRect: CGRect, customerTop: CGFloat) -> CGFloat{
+        let namefont = UIFont.init(name: "Nunito", size: 18)
+        let nameAttributes: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: namefont!]
+        let attributedName = NSAttributedString(string: "Sajid Hasan", attributes: nameAttributes)
+        let nameStringSize = attributedName.size()
+        let nameStringRect = CGRect(x: 72, y: customerTop, width: nameStringSize.width, height: nameStringSize.height)
         
+        attributedName.draw(in: nameStringRect)
+        
+        return nameStringRect.origin.y + nameStringRect.height
     }
     
     
