@@ -23,6 +23,9 @@ class InvoiceMaker: NSObject {
         let format = UIGraphicsPDFRendererFormat()
         format.documentInfo = pdfMetaData as [String: Any]
         
+        //8.3 * 11.7 - A4 size
+        //8.5 * 11 - US letter size
+        
         let pageWidth = 8.5 * 72.0
         let pageHeight = 11 * 72.0
         let pageRect = CGRect(x: 0, y: 0, width: pageWidth, height: pageHeight)
@@ -34,6 +37,10 @@ class InvoiceMaker: NSObject {
             let titleBottom = addTitle(pageRect: pageRect)
             let addressBottom = addAddress(pageRect: pageRect, addressTop: titleBottom)
             let contactBottom = addContact(pageRect: pageRect, contactTop: addressBottom)
+            let dateBottom = addDate(pageRect: pageRect, dateTop: contactBottom, fontName: "Nunito", fontSize: 12)
+            
+            let context = context.cgContext
+            drawLine(context, pageRect: pageRect, lineY: dateBottom)
             //let imageBottom = addImage(pageRect: pageRect, imageTop: titleBottom + 18.0)
             //addBodyText(pageRect: pageRect, textTop: imageBottom + 18.0)
         }
@@ -79,6 +86,50 @@ class InvoiceMaker: NSObject {
         
         return contactStringRect.origin.y + contactStringRect.size.height
     }
+    
+    
+    private func addDate(pageRect: CGRect, dateTop: CGFloat, fontName: String, fontSize: CGFloat) -> CGFloat{
+        let dateFont = UIFont.init(name: fontName, size: fontSize)
+        let dateAttributes: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: dateFont!]
+        let attributedDate = NSAttributedString(string: "Date: " + getDate(), attributes: dateAttributes)
+        
+        let dateStringSize = attributedDate.size()
+        
+        let dateStringRect = CGRect(x: pageRect.width - dateStringSize.width - 72, y: dateTop, width: dateStringSize.width, height: dateStringSize.height)
+        
+        attributedDate.draw(in: dateStringRect)
+        
+        return dateStringRect.origin.y + dateStringRect.size.height
+
+    }
+    
+    private func getDate() -> String {
+        let now = Date()
+
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        formatter.timeStyle = .none
+
+        let datetime = formatter.string(from: now)
+        return datetime
+    }
+    
+    private func drawLine(_ drawContext: CGContext, pageRect: CGRect, lineY: CGFloat){
+        drawContext.saveGState()
+        drawContext.setLineWidth(1.0)
+        drawContext.move(to: CGPoint(x: 0, y: lineY))
+        drawContext.addLine(to: CGPoint(x: pageRect.width, y: lineY))
+        drawContext.strokePath()
+        drawContext.restoreGState()
+        
+        drawContext.saveGState()
+        
+    }
+    
+    private func addCustomerDetails(){
+        
+    }
+    
     
     
     
