@@ -140,11 +140,21 @@ class InvoiceMaker: NSObject {
         
         attributedName.draw(in: nameStringRect)
         
+        let nameBottom = nameStringRect.origin.y + nameStringRect.height
+        
+        let font = UIFont.init(name: "Nunito", size: 12)
+        let attributes = [NSAttributedString.Key.font: font!]
+        let attributedAddress = NSAttributedString(string: "House 3/I, Road 7, Block - G, Bashundhara R/A", attributes: attributes)
+        let addressStringSize = attributedAddress.size()
+        
+        let addressStringRect = CGRect(x: 72, y: nameBottom, width: addressStringSize.width, height: addressStringSize.height)
+        attributedAddress.draw(in: addressStringRect)
+        
+        let addressBottom = addressStringRect.origin.y + addressStringRect.height
+        
         return nameStringRect.origin.y + nameStringRect.height
+        
+        
     }
-    
-    
-    
-    
     
 }
