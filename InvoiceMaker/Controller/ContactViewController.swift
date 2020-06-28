@@ -18,6 +18,8 @@ class ContactViewController: UIViewController {
         nextButton.layer.cornerRadius = 10
         decorateTextField(tf: emailTextField, placeholder: "name@email.com")
         decorateTextField(tf: phoneTextField, placeholder: "+8801611282830")
+        
+        loadSingletapGestureRecognizer()
 
     }
     
@@ -41,4 +43,18 @@ class ContactViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
         
     }
+    
+    func loadSingletapGestureRecognizer(){
+        let singleTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.singleTap(sender:)))
+        singleTapGestureRecognizer.numberOfTapsRequired = 1
+        singleTapGestureRecognizer.isEnabled = true
+        singleTapGestureRecognizer.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(singleTapGestureRecognizer)
+    }
+    
+    @objc func singleTap(sender: UITapGestureRecognizer) {
+        self.emailTextField.resignFirstResponder()
+        self.phoneTextField.resignFirstResponder()
+    }
+    
 }

@@ -12,10 +12,13 @@ class AddressViewController: UIViewController {
 
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var addressTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         decorateTextField(tf: addressTextField)
         nextButton.layer.cornerRadius = 10
+        
+        loadSingletapGestureRecognizer()
         
         print("Business name:", business.businessName)
     }
@@ -37,6 +40,18 @@ class AddressViewController: UIViewController {
         tf.borderStyle = .none
         tf.font = UIFont.init(name: "Nunito", size: 30)
         tf.placeholder = "Business address"
+    }
+    
+    func loadSingletapGestureRecognizer(){
+        let singleTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.singleTap(sender:)))
+        singleTapGestureRecognizer.numberOfTapsRequired = 1
+        singleTapGestureRecognizer.isEnabled = true
+        singleTapGestureRecognizer.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(singleTapGestureRecognizer)
+    }
+    
+    @objc func singleTap(sender: UITapGestureRecognizer) {
+        self.addressTextField.resignFirstResponder()
     }
 
 }

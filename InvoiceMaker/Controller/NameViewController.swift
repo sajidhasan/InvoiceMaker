@@ -20,8 +20,7 @@ class NameViewController: UIViewController {
         super.viewDidLoad()
         decorateTextField()
         decoratenextButton()
-
-        
+        loadSingletapGestureRecognizer()
     }
     
     private func decorateTextField(){
@@ -45,6 +44,18 @@ class NameViewController: UIViewController {
     @IBAction func backButtonPressed(_ sender: UIButton) {
         
         navigationController?.popViewController(animated: true)
+    }
+    
+    func loadSingletapGestureRecognizer(){
+        let singleTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.singleTap(sender:)))
+        singleTapGestureRecognizer.numberOfTapsRequired = 1
+        singleTapGestureRecognizer.isEnabled = true
+        singleTapGestureRecognizer.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(singleTapGestureRecognizer)
+    }
+    
+    @objc func singleTap(sender: UITapGestureRecognizer) {
+        self.nameTextField.resignFirstResponder()
     }
     
 }

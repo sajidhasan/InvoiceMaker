@@ -152,7 +152,15 @@ class InvoiceMaker: NSObject {
         
         let addressBottom = addressStringRect.origin.y + addressStringRect.height
         
-        return nameStringRect.origin.y + nameStringRect.height
+        
+        let attributedContact = NSAttributedString(string: "Email: sajid@yahoo.com, Phone: 01718889191", attributes: attributes)
+        let contactStringSize = attributedContact.size()
+        let contactStringRect = CGRect(x: 72, y: addressBottom, width: contactStringSize.width, height: contactStringSize.height)
+        attributedContact.draw(in: contactStringRect)
+        
+        let contactBottom = contactStringRect.origin.y + contactStringRect.height
+        
+        return contactBottom
         
         
     }
