@@ -9,8 +9,8 @@
 import Foundation
 
 struct Customer {
-    let name: String
-    let address: String
-    let phone: String
-    let email: String
+    var name: String
+    var address: String
+    var phone: String
+    var email: String
 }

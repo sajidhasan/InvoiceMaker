@@ -15,6 +15,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="building" translatesAutoresizingMaskIntoConstraints="NO" id="Vfj-bG-KaB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create and Share Invoice" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58X-Ac-gQy">
                                 <rect key="frame" x="108.5" y="280.5" width="197" height="335"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -22,15 +25,19 @@
                                     <constraint firstAttribute="height" constant="335" id="X7G-d3-RCU"/>
                                     <constraint firstAttribute="width" constant="197" id="oWt-oW-y4T"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="46"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="50"/>
+                                <color key="textColor" red="0.22548073530000001" green="0.28517559170000001" blue="0.67062312359999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.22548073530000001" green="0.28517559170000001" blue="0.67062312359999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Vfj-bG-KaB" secondAttribute="bottom" id="HwE-dx-K9k"/>
+                            <constraint firstItem="Vfj-bG-KaB" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Kyi-68-c3X"/>
                             <constraint firstItem="58X-Ac-gQy" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="QJ7-7b-LG7"/>
+                            <constraint firstItem="Vfj-bG-KaB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rd1-a9-Ix6"/>
                             <constraint firstItem="58X-Ac-gQy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="RhN-f0-MoO"/>
+                            <constraint firstItem="Vfj-bG-KaB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mUv-gG-wG8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -40,4 +47,7 @@
             <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="building" width="1130" height="1600"/>
+    </resources>
 </document>

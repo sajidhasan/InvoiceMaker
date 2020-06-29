@@ -34,6 +34,7 @@
 		0200077C249FCD56003A5652 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0200077B249FCD56003A5652 /* ContactViewController.swift */; };
 		0200077E249FE419003A5652 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0200077D249FE419003A5652 /* PreviewViewController.swift */; };
 		02000781249FE907003A5652 /* InvoiceMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02000780249FE906003A5652 /* InvoiceMaker.swift */; };
+		029792B924A949C1002233B6 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029792B824A949C1002233B6 /* CustomerViewController.swift */; };
 		02A1650924A6AC52004CFA08 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A1650824A6AC52004CFA08 /* Customer.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		0200077B249FCD56003A5652 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		0200077D249FE419003A5652 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		02000780249FE906003A5652 /* InvoiceMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceMaker.swift; sourceTree = "<group>"; };
+		029792B824A949C1002233B6 /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
 		02A1650824A6AC52004CFA08 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +154,7 @@
 				02000773249FBC1F003A5652 /* AddressViewController.swift */,
 				0200077B249FCD56003A5652 /* ContactViewController.swift */,
 				0200077D249FE419003A5652 /* PreviewViewController.swift */,
+				029792B824A949C1002233B6 /* CustomerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				029792B924A949C1002233B6 /* CustomerViewController.swift in Sources */,
 				0200073D249F9C54003A5652 /* ViewController.swift in Sources */,
 				02A1650924A6AC52004CFA08 /* Customer.swift in Sources */,
 				0200077C249FCD56003A5652 /* ContactViewController.swift in Sources */,

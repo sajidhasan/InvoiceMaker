@@ -35,11 +35,14 @@ class ContactViewController: UIViewController {
     
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {
-        let contact = "Email: \(emailTextField.text!), Phone: \(phoneTextField.text!)"
+        let contact = "E-mail: \(emailTextField.text!), Phone: \(phoneTextField.text!)"
         business.businessContact = contact
-        let invoiceMaker = InvoiceMaker()
-        let vc = (storyboard?.instantiateViewController(withIdentifier: "PreviewViewController")) as! PreviewViewController
-        vc.documentData = invoiceMaker.createInvoice()
+//        let invoiceMaker = InvoiceMaker()
+//        let vc = (storyboard?.instantiateViewController(withIdentifier: "PreviewViewController")) as! PreviewViewController
+//        vc.documentData = invoiceMaker.createInvoice()
+//        navigationController?.pushViewController(vc, animated: true)
+        
+        let vc = (storyboard?.instantiateViewController(withIdentifier: "CustomerViewController")) as! CustomerViewController
         navigationController?.pushViewController(vc, animated: true)
         
     }

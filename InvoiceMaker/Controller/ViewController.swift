@@ -20,6 +20,9 @@ class ViewController: UIViewController {
         
         showCreateNewButton()
         
+//        let vc = (storyboard?.instantiateViewController(withIdentifier: "CustomerViewController")) as! CustomerViewController
+//        navigationController?.pushViewController(vc, animated: true)
+        
     }
     
     private func showCreateNewButton(){

@@ -10,8 +10,8 @@ import UIKit
 import PDFKit
 
 class PreviewViewController: UIViewController {
-
-
+    
+    
     @IBOutlet weak var continuewButton: UIButton!
     
     public var documentData: Data?
@@ -27,14 +27,19 @@ class PreviewViewController: UIViewController {
     @IBAction func backButtonPressed(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
+    
+    
     @IBAction func continuewButtonPressed(_ sender: Any) {
+        
     }
+    
+    
     func loadPDF(){
         let pdfView = PDFView()
-
+        
         pdfView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(pdfView)
-
+        
         pdfView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 0).isActive = true
         pdfView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: 0).isActive = true
         //pdfView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
@@ -42,14 +47,14 @@ class PreviewViewController: UIViewController {
         pdfView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -100).isActive = true
         
         if let data = documentData {
-          pdfView.document = PDFDocument(data: data)
-          pdfView.autoScales = true
-          
+            pdfView.document = PDFDocument(data: data)
+            pdfView.autoScales = true
+            
         }
-
+        
     }
     
     
-
-
+    
+    
 }

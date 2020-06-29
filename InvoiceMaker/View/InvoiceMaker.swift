@@ -14,6 +14,10 @@ class InvoiceMaker: NSObject {
     let businessName = business.businessName
     let businessAddress = business.businessAddress
     let businessContact = business.businessContact
+    let customerName = customer.name
+    let customerAddress = customer.address
+    let customerEmail = customer.email
+    let customerPhone = customer.phone
     
     func createInvoice() -> Data {
         let pdfMetaData = [kCGPDFContextCreator: "Sajid Hasan",
@@ -134,7 +138,7 @@ class InvoiceMaker: NSObject {
     private func addCustomerDetails(pageRect: CGRect, customerTop: CGFloat) -> CGFloat{
         let namefont = UIFont.init(name: "Nunito", size: 18)
         let nameAttributes: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: namefont!]
-        let attributedName = NSAttributedString(string: "Sajid Hasan", attributes: nameAttributes)
+        let attributedName = NSAttributedString(string: customerName, attributes: nameAttributes)
         let nameStringSize = attributedName.size()
         let nameStringRect = CGRect(x: 72, y: customerTop, width: nameStringSize.width, height: nameStringSize.height)
         
@@ -144,7 +148,7 @@ class InvoiceMaker: NSObject {
         
         let font = UIFont.init(name: "Nunito", size: 12)
         let attributes = [NSAttributedString.Key.font: font!]
-        let attributedAddress = NSAttributedString(string: "House 3/I, Road 7, Block - G, Bashundhara R/A", attributes: attributes)
+        let attributedAddress = NSAttributedString(string: customerAddress, attributes: attributes)
         let addressStringSize = attributedAddress.size()
         
         let addressStringRect = CGRect(x: 72, y: nameBottom, width: addressStringSize.width, height: addressStringSize.height)
@@ -153,7 +157,7 @@ class InvoiceMaker: NSObject {
         let addressBottom = addressStringRect.origin.y + addressStringRect.height
         
         
-        let attributedContact = NSAttributedString(string: "Email: sajid@yahoo.com, Phone: 01718889191", attributes: attributes)
+        let attributedContact = NSAttributedString(string: "E-mail:\(customerEmail), Phone: \(customerPhone)", attributes: attributes)
         let contactStringSize = attributedContact.size()
         let contactStringRect = CGRect(x: 72, y: addressBottom, width: contactStringSize.width, height: contactStringSize.height)
         attributedContact.draw(in: contactStringRect)
